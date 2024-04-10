@@ -11,7 +11,8 @@ https://github.com/tabatkins/wordle-list/blob/main/words
 Buradaki txt dosyası csv e dönüştürülmüştür.
 
 ## Kullanım
-ipynb dosyasındaki ilk hücre yapay zeka modelinin ve oyunun sınıfını içermektedir. Altındaki hücrede yapay zekaya bir oyun oynatılmış, onun altındaysa 100 oyun oynatılmış ve sonuçlar tutulmuştur. success (başarılı oyun sayısı), word_dict (başarısız olunan kelimeler) ,score_dict (başarısız olunan kelimelerde alınan skorlar) ,vowel_dict (başarısız olunan kelimelerdeki sesli harf adetleri) ve letter_dict (başarısız olunan kelimelerdeki harfler) te tutulmuştur. Denemek amacıyla 100 oyundan oluşan simülasyonu çalıştırabilir ve simülasyonun sonuçlarına bakabilirsiniz.
+
+AI_Wordle kısmında verilen github hesabından kodu indirebilirsiniz. Kodun çalışması için gerekli verinin linki verilmiştir. ipynb dosyasındaki ilk hücre yapay zeka modelinin ve oyunun sınıfını içermektedir. Altındaki hücrede yapay zekaya bir oyun oynatılmış, onun altındaysa 100 oyun oynatılmış ve sonuçlar tutulmuştur. success (başarılı oyun sayısı), word_dict (başarısız olunan kelimeler) ,score_dict (başarısız olunan kelimelerde alınan skorlar) ,vowel_dict (başarısız olunan kelimelerdeki sesli harf adetleri) ve letter_dict (başarısız olunan kelimelerdeki harfler) te tutulmuştur. Denemek amacıyla 100 oyundan oluşan simülasyonu çalıştırabilir ve simülasyonun sonuçlarına bakabilirsiniz.
 
 
 ## Katkıda Bulunma
