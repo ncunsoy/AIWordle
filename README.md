@@ -1,7 +1,6 @@
 # AI_Wordle
 
-AI_Wordle,'Wordle' oynayan bir yapay zeka modelidir. \n
-https://github.com/ncunsoy/AIWordle
+AI_Wordle,'Wordle' oynayan bir yapay zeka modelidir.  https://github.com/ncunsoy/AIWordle
 
 ## Veri 
 
