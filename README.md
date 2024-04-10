@@ -7,6 +7,7 @@ https://github.com/ncunsoy/AIWordle
 ## Veri 
 
 https://github.com/tabatkins/wordle-list/blob/main/words
+
 Buradaki txt dosyası csv e dönüştürülmüştür.
 
 ## Kullanım
