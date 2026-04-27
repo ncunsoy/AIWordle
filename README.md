@@ -1,25 +1,33 @@
-# AI_Wordle
+# AIWordle
 
-AI_Wordle,'Wordle' oynayan bir yapay zeka modelidir. 
+A probability-based AI agent that plays Wordle autonomously. Built as a course project (YAP441).
 
-https://github.com/ncunsoy/AIWordle
+## How it works
 
-## Veri 
+The agent maintains a list of all valid 5-letter words and narrows it down after each guess using Wordle feedback:
 
-https://github.com/tabatkins/wordle-list/blob/main/words
+- **Green** — correct letter, correct position → filter to words matching that position
+- **Yellow** — correct letter, wrong position → filter to words containing that letter elsewhere
+- **Grey** — letter not in word → eliminate all words containing that letter
 
-Buradaki txt dosyası csv e dönüştürülmüştür.
+Each guess is selected from the remaining candidates based on letter frequency probabilities — letters that appear most often across the remaining word pool are prioritized.
 
-## Kullanım
+## Dataset
 
-AI_Wordle kısmında verilen github hesabından kodu indirebilirsiniz. Kodun çalışması için gerekli verinin linki verilmiştir. ipynb dosyasındaki ilk hücre yapay zeka modelinin ve oyunun sınıfını içermektedir. Altındaki hücrede yapay zekaya bir oyun oynatılmış, onun altındaysa 100 oyun oynatılmış ve sonuçlar tutulmuştur. success (başarılı oyun sayısı), word_dict (başarısız olunan kelimeler) ,score_dict (başarısız olunan kelimelerde alınan skorlar) ,vowel_dict (başarısız olunan kelimelerdeki sesli harf adetleri) ve letter_dict (başarısız olunan kelimelerdeki harfler) te tutulmuştur. Denemek amacıyla 100 oyundan oluşan simülasyonu çalıştırabilir ve simülasyonun sonuçlarına bakabilirsiniz.
+Word list sourced from [tabatkins/wordle-list](https://github.com/tabatkins/wordle-list/blob/main/words), converted to CSV.
 
+## Results
 
-## Katkıda Bulunma
+Evaluated over 100 simulated games. Results tracked per game:
+- `success` — number of games solved
+- `word_dict` — words the agent failed on
+- `score_dict` — guess counts for failed games
+- `vowel_dict` — vowel counts in failed words
+- `letter_dict` — letter distribution in failed words
 
-Çekme istekleri memnuniyetle karşılanır. Önemli değişiklikler için lütfen öncelikle tartışmak için bir konu açın.
+## Usage
 
-
-# Lisans
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Open `YAP441_PROJE.ipynb` in Jupyter. The notebook contains:
+1. The AI agent and game class
+2. A single game simulation
+3. A 100-game simulation with result analysis
